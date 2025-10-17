@@ -1,10 +1,10 @@
 #Begin35 Вершинин ИСП 111
-V = float(input())
-U = float(input())
-T1 = float(input())
-T2 = float(input())
+V = float(input("Введите собственную скорость лодки: "))
+U = float(input("Введите скорость течения реки: "))
+T1 = float(input("Введите время 1: "))
+T2 = float(input("Введите время 2: "))
 if U < V and U > 0 and V > 0 and T1 > 0 and T2 > 0:
     S = T1 * V + T2 * (V - U)
-    print(S)
+    print("Растояние пройденное лодкой равняется" ,S)
 else:
     print("Какой-то аргумент меньше 0 или равен 0 или скорость реки больше скорости лодки!")
